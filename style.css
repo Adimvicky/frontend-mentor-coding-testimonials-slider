@@ -1,0 +1,77 @@
+:root {
+	--color-dark : hsl(240, 38%, 20%);
+	--color-grey : hsl(240, 18%, 77%);
+}
+
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Inter',sans-serif;
+	font-size: 3.2rem;
+	font-weight: 300;
+	color : var(--color-dark);
+}
+
+.testimonial {
+	max-width : 105rem;
+	margin: 10rem auto;
+	padding : 15rem 7.5rem;
+	box-shadow: 0 2px .5rem var(--color-grey);
+	border-radius: .3rem;
+	position : relative;
+}
+
+.testimonial__content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	max-width: 52rem;
+}
+
+.testimonial__content__person {
+	display: flex;
+	align-items: flex-end;
+}
+.testimonial__content__person__role {
+	font-size: 2.5rem;
+}
+
+
+.testimonial__figure {
+	/* max-width: 40rem; */
+	position: absolute;
+	top : 5rem;
+	right: 4rem;
+	background-image: url(./images/pattern-bg.svg);
+}
+.testimonial__figure img {
+}
+.testimonial__figure__person {
+	position: absolute;
+	top : 10rem;
+	right: 5rem;
+}
+/* .testimonial__figure__pattern {
+	position: absolute;
+} */
+
+.testimonial__pattern__curve {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+ }
