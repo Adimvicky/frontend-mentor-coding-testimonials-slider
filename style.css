@@ -33,13 +33,7 @@ body {
 	display: flex;
 }
 
-@media screen and (max-width:75em){
-	.testimonial {
-		margin: 0;
-		margin-bottom: 1rem;
-		box-shadow: none;
-	}
-}
+
 .testimonial__content {
 	flex : 1 1 60%;
 	display: flex;
@@ -95,6 +89,9 @@ body {
 	border-radius: 3px;
 
 }
+.testimonial__figure__person img {
+	width: 100%;
+}
 .testimonial__figure__pattern {
 	position: absolute;
 	right: -3rem;
@@ -105,8 +102,8 @@ body {
 .testimonial__figure__controls {
 	position: absolute;
 	z-index: 50;
-	bottom: -5rem;
-	left: 12rem;
+	bottom: -1rem;
+	left: 4rem;
 	background-color: #fff;
 	border-radius: 100px;
 	width: 5rem;
@@ -139,8 +136,10 @@ body {
 }
 
 .attribution {
-	font-size: 1.5rem;
+	margin-top: 1rem;
+	font-size: 1.6rem;
 	text-align: center;
+	letter-spacing: .3px;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
@@ -151,4 +150,91 @@ body {
 }
 .text-bold {
 	font-weight: 700;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:75em){
+	.testimonial {
+		margin: 0;
+		margin-bottom: 1rem;
+		box-shadow: none;
+	}
+	body {
+		font-size:2.5rem;
+	}
+	.testimonial__figure {
+		flex: 1 1 50%;
+		top: -10rem;
+	}
+	.testimonial__content__person {
+		font-size: 1.8rem;
+	}
+}
+@media screen and (max-width:56.25em){
+	.testimonial {
+		padding : 12rem 5rem;
+	}
+	.testimonial__figure {
+		top: 2rem;
+	}
+}
+
+@media screen and (max-width:50em){
+	.testimonial {
+		flex-direction: column;
+	}
+	.testimonial__figure {
+		order: -1;
+		margin-bottom: 45rem;
+		top: 4rem;
+		right: initial;
+	}
+	.testimonial__figure__pattern {
+		top : -6.5rem
+	}
+	.testimonial__figure__person {
+		top: -1.5rem;
+	}
+	.testimonial__figure__controls {
+		left: 50%;
+		transform : translateX(-50%);
+	}
+	.testimonial__content {
+		align-items: center;
+	}
+	.testimonial__content__person {
+		flex-direction: column;
+		align-items: center;
+	}
+	.testimonial__content__person__role {
+		margin : 1.5rem 0;
+	}
+	.testimonial__content__quote img {
+		left: 50%;
+		transform : translateX(-50%);
+	}
+}
+
+@media screen and (max-width:33em){
+	.testimonial {
+		padding : 5rem 2rem;
+	}
+	.testimonial__figure {
+		margin-bottom: 37rem;
+	}
+
+}
+@media screen and (max-width:25em){
+	html {
+		font-size : 60%;
+	}
+	.testimonial__figure {
+		margin-bottom: 28rem;
+	}
+}
+@media screen and (max-width:23em){
+	.testimonial__figure {
+		margin-bottom: 35rem;
+	}
 }

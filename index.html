@@ -16,9 +16,11 @@
 		<div class="testimonial">
 			<div class="testimonial__content">
 				<blockquote class="testimonial__content__quote">
-					“ I’ve been interested in coding for a while but never taken the jump, until now.
+					<span class="testimonial__content__quote-text">
+						“ I’ve been interested in coding for a while but never taken the jump, until now.
 					I couldn’t recommend this course enough. I’m now in the job of my dreams and so
 					excited about the future. ”
+					</span>
 					<img src="./images/pattern-quotes.svg" alt="">
 				</blockquote>
 				<div class="testimonial__content__person">
@@ -30,15 +32,18 @@
 
 			<figure class="testimonial__figure">
 				<img class="testimonial__figure__pattern" src="./images/pattern-bg.svg" alt="">
-				<img class="testimonial__figure__person" id="image" src="./images/image-tanya.jpg" alt="">
-				<div class="testimonial__figure__controls">
-					<button id="prev">
-						<img src="./images/icon-prev.svg" alt="Prev">
-					</button>
-					<button id="next">
-						<img src="./images/icon-next.svg" alt="Next">
-					</button>
-				</div>
+				<figure class="testimonial__figure__person">
+					<img  id="image" src="./images/image-tanya.jpg" alt="">
+					<div class="testimonial__figure__controls">
+						<button id="prev">
+							<img src="./images/icon-prev.svg" alt="Prev">
+						</button>
+						<button id="next">
+							<img src="./images/icon-next.svg" alt="Next">
+						</button>
+					</div>
+				</figure>
+
 			</figure>
 
 			<img src="./images/pattern-curve.svg" alt="" class="testimonial__pattern-curve">
@@ -70,7 +75,7 @@
 			}
 		]
 
-		let quoteEl = document.getElementsByClassName('testimonial__content__quote')[0];
+		let quoteEl = document.getElementsByClassName('testimonial__content__quote-text')[0];
 		let nameEl = document.getElementsByClassName('testimonial__content__person__name')[0];
 		let roleEl = document.getElementsByClassName('testimonial__content__person__role')[0];
 		let imageEl = document.getElementById('image');
