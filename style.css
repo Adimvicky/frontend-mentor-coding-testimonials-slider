@@ -136,8 +136,8 @@ body {
 }
 
 .attribution {
-	margin-top: 1rem;
-	font-size: 1.6rem;
+	margin: 2rem 0;
+	font-size: 1.8rem;
 	text-align: center;
 	letter-spacing: .3px;
 }
@@ -202,6 +202,7 @@ body {
 	}
 	.testimonial__content {
 		align-items: center;
+		right: initial;
 	}
 	.testimonial__content__person {
 		flex-direction: column;
@@ -230,7 +231,7 @@ body {
 		font-size : 60%;
 	}
 	.testimonial__figure {
-		margin-bottom: 28rem;
+		margin-bottom: 30rem;
 	}
 }
 @media screen and (max-width:23em){
